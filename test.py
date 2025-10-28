@@ -1,8 +1,13 @@
-# Program to add two numbers
+import sys
 
-# Taking input from the user
-num1 = float(input("Enter first number: "))
-num2 = float(input("Enter second number: "))
+# Using command-line arguments instead of input()
+if len(sys.argv) == 3:
+    num1 = float(sys.argv[1])
+    num2 = float(sys.argv[2])
+else:
+    # Default values if no arguments provided
+    num1 = 10.5
+    num2 = 20.3
 
 # Adding the numbers
 sum = num1 + num2
